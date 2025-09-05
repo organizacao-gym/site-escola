@@ -30,11 +30,26 @@
       transform: translateY(-2px);
       outline: none;
     }
+    /* Ajustes para tabela de mercado */
+    #mercado table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    #mercado th,
+    #mercado td {
+      border: 1px solid #ddd;
+      padding: 0.75rem;
+      text-align: left;
+    }
+    #mercado th {
+      background-color: #f5f5f5;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Link de acesso rápido -->
+  <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
 
   <header role="banner">
     <div class="container header-inner">
@@ -49,6 +64,7 @@
           <li><a href="#objetivos">Objetivos</a></li>
           <li><a href="#conteudo">Conteúdo</a></li>
           <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#mercado">Mercado de Trabalho</a></li>
         </ul>
       </nav>
     </div>
@@ -58,12 +74,28 @@
     <section id="introducao">
       <h2>📘 O que é?</h2>
       <p>
-        A disciplina Análise e Projeto de Sistemas abrange o estudo das técnicas e ferramentas
-         para entender um problema de negócio e, a partir dos requisitos levantados, projetar uma solução de software
-          ou sistema de informação eficaz e customizada. O processo envolve a análise de requisitos, a modelagem 
-          dos dados e processos, o desenvolvimento de uma arquitetura robusta e a especificação 
-          do projeto para que ele atenda às necessidades da organização e do usuário final.
+        Disciplina que estuda como identificar, planejar e estruturar sistemas de
+        informação para atender às necessidades de usuários e organizações.
+        Envolve levantamento de requisitos, modelagem, documentação e validação de soluções.
       </p>
+    </section>
+
+    <section id="info">
+      <h2>📄 Informações da Disciplina</h2>
+      <dl>
+        <dt>Código:</dt>
+        <dd>ADS101</dd>
+        <dt>Semestre:</dt>
+        <dd>2025.1</dd>
+        <dt>Carga Horária:</dt>
+        <dd>60 horas</dd>
+        <dt>Créditos:</dt>
+        <dd>4</dd>
+        <dt>Pré-requisitos:</dt>
+        <dd>Lógica de Programação</dd>
+        <dt>Professor(a):</dt>
+        <dd>Dr. Maria Oliveira</dd>
+      </dl>
     </section>
 
     <section id="objetivos">
@@ -97,6 +129,45 @@
         <li>Diagramas UML para sistemas web e mobile</li>
         <li>Prototipação de interfaces e fluxos de navegação</li>
       </ul>
+    </section>
+
+    <section id="mercado">
+      <h2>💼 Mercado de Trabalho</h2>
+      <p>
+        A média salarial de um Analista de Sistemas no Brasil é de
+        R$ 8.058,92/mês (CLT, 42 h semanais).
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Área de Atuação</th>
+            <th>Exemplos de Cargos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Desenvolvimento de Software</td>
+            <td>Front-end, Back-end, Full-stack</td>
+          </tr>
+          <tr>
+            <td>Análise de Sistemas</td>
+            <td>Analista de Sistemas, Analista de Requisitos</td>
+          </tr>
+          <tr>
+            <td>Administração de Banco de Dados</td>
+            <td>DBA (Administrador de Banco de Dados)</td>
+          </tr>
+          <tr>
+            <td>Administração de Redes</td>
+            <td>Administrador de Redes</td>
+          </tr>
+          <tr>
+            <td>Gestão de Projetos</td>
+            <td>Gerente de Projetos, Scrum Master</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 
