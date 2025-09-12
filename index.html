@@ -219,9 +219,83 @@
       <p>O Colégio Estadual Ambrósio Bini, em Almirante Tamandaré (PR), é uma escola pública que há décadas contribui para a educação da comunidade local. Em 2003, seu prédio foi interditado por problemas estruturais, e por 10 anos funcionou em salas provisórias. Em 2013, a escola foi totalmente reconstruída com investimento de R$ 1,8 milhão, incluindo novas fundações, instalações modernas e uma quadra coberta. A reinauguração marcou a retomada de um espaço essencial para a formação de gerações de alunos.</p>
       
       <div class="image-gallery">
-        <img src="ativi-main/imagem/campus1.jpg" alt="Fachada do Colégio 1">
-        <img src="ativi-main/imagem/campus2.jpg" alt="Fachada do Colégio 2">
-        <img src="ativi-main/imagem/campus3.jpg" alt="Fachada do Colégio 3">
+<style>
+  /* Estilo do modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    animation: zoom 0.3s;
+  }
+
+  @keyframes zoom {
+    from {transform: scale(0.5)}
+    to {transform: scale(1)}
+  }
+
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 45px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .image-gallery img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    transition: 0.3s;
+  }
+
+  .image-gallery img:hover {
+    opacity: 0.8;
+  }
+</style>
+
+<div class="image-gallery">
+  <img id="myImg" src="ativi-main/imagem/frente deitada.jpg" alt="Fachada do Colégio 1">
+</div>
+
+<!-- O Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+<script>
+  // Pega os elementos
+  var modal = document.getElementById("myModal");
+  var img = document.getElementById("myImg");
+  var modalImg = document.getElementById("imgModal");
+  var span = document.getElementsByClassName("close")[0];
+
+  // Quando clicar na imagem, abre o modal
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+
+  // Quando clicar no "X", fecha o modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
       </div>
 
       <a href="galeria.html">
@@ -246,7 +320,7 @@
   <h2>Contato</h2>
   <p>Fale com nossa equipe:</p>
   <ul>
-    <li>📞 Telefone: <a href="tel:+55419828201018">(41) 28102022</a></li>
+    <li> Facebook: <a href="https://www.facebook.com/groups/940279699337782/">Facebook Ambrósio Bini</a></li>
   </ul>
 </section>
 
